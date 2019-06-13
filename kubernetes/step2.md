@@ -5,5 +5,11 @@ Download kube-state-metrics
 Install kube-state-metrics in the cluster
 `kubectl apply -f kube-state-metrics-release-1.5/kubernetes`{{execute}}
 
+Confirm that kube-state-metrics is installed
+`kubectl get pods --all-namespaces | grep kube-state-metrics`{{execute}}
+
 ## Install the New Relic Kubernetes integration
 `kubectl create -f newrelic-infrastructure-k8s-latest.yaml`{{execute}}
+
+Confirm the daemon set was created
+`kubectl get daemonsets`{{execute}}
