@@ -23,13 +23,13 @@
       "text": "finish.md"
     },
     "assets": { 
-      "host0": [ {"file": "*", "target": "/root"} ]
+      "host01": [ {"file": "*", "target": "/root"} ]
     }
   },
   "environment": {
     "uilayout": "editor-terminal"
   },
   "backend": {
-    "imageid": "kubernetes"
+    "imageid": "ubuntu"
   }
 }
