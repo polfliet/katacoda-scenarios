@@ -21,6 +21,9 @@
     },
     "finish": {
       "text": "finish.md"
+    },
+    "assets": { 
+      "host01": [ {"file": "*", "target": "/root"} ] 
     }
   },
   "environment": {
@@ -28,8 +31,5 @@
   },
   "backend": {
     "imageid": "kubernetes"
-  },
-  "assets": { 
-    "host01": [ {"file": "*", "target": "/root"} ] 
   }
 }
