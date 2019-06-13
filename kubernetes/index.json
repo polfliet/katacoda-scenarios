@@ -26,7 +26,7 @@
       "host01": [ {"file": "*", "target": "/root"} ]
     }
   },
-  "files": "newrelic-infrastructure-k8s-latest.yaml",
+  "files": ["newrelic-infrastructure-k8s-latest.yaml"],
   "environment": {
     "uilayout": "editor-terminal"
   },
