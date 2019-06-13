@@ -5,8 +5,7 @@
     "steps": [
       {
         "title": "Step 1",
-        "text": "step1.md",
-        "files": "newrelic-infrastructure-k8s-latest.yaml"
+        "text": "step1.md"
       },
       {
         "title": "Step 2",
@@ -27,6 +26,7 @@
       "host01": [ {"file": "*", "target": "/root"} ]
     }
   },
+  "files": "newrelic-infrastructure-k8s-latest.yaml",
   "environment": {
     "uilayout": "editor-terminal"
   },
