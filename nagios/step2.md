@@ -20,3 +20,13 @@ Add the following: ''
 
 * Restart the New Relic agent
 `sudo systemctl restart newrelic-infra`{{execute}}
+
+
+<pre class="file" data-filename="/etc/newrelic-infra/integrations.d/nagios-service-check-editor.js" data-target="replace">service_checks:
+  - name: check_users
+    command: ["/usr/local/nagios/libexec/check_users", "-w", "5555", "-c", "10"]
+    parse_output: true
+    labels:
+      env: staging
+      key1: val1
+</pre>
