@@ -23,9 +23,9 @@
       "host01": [ {"file": "nagios-service-checks.yml", "target": "/etc/newrelic-infra/integrations.d/"} ]
     }
   },
-  "files": {
+  "files": [
     "nagios-service-checks.yml"
-  },
+  ],
   "environment": {
     "uilayout": "editor-terminal",
     "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\n"
