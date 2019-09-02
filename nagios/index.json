@@ -34,7 +34,7 @@
     "/etc/newrelic-infra/integrations.d/nagios-service-checks.yml"
   ],
   "environment": {
-    "uilayout": "editor-terminal",
+    "uilayout": "terminal",
     "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\n"
   },
   "backend": {
