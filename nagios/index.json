@@ -14,7 +14,7 @@
     }],
     "intro": {
       "text": "intro.md",
-      "credits": ""
+      "credits": "spolfliet@newrelic.com"
     },
     "finish": {
       "text": "finish.md"
