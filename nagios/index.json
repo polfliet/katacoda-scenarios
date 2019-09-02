@@ -18,10 +18,13 @@
     },
     "finish": {
       "text": "finish.md"
+    },
+    "assets": { 
+      "host01": [ {"file": "*", "target": "/etc/newrelic-infra/integrations.d/"} ]
     }
   },
   "environment": {
-    "uilayout": "terminal",
+    "uilayout": "editor-terminal",
     "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\n"
   },
   "backend": {

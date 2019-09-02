@@ -11,7 +11,7 @@ More detailed instructions can be found on [docs.newrelic.com](https://docs.newr
 `curl https://download.newrelic.com/infrastructure_agent/gpg/newrelic-infra.gpg | sudo apt-key add -`{{execute}}
 
 * Update apt repository
-`printf "deb [arch=amd64] https://download.newrelic.com/infrastructure_agent/linux/apt bionic main" | sudo tee -a /etc/apt/sources.list.d/newrelic-infra.list`{{execute}}
+`printf "deb [arch=amd64] https://download.newrelic.com/infrastructure_agent/linux/apt xenial main" | sudo tee -a /etc/apt/sources.list.d/newrelic-infra.list`{{execute}}
 
 * Update apt package manager
 `sudo apt-get update`{{execute}}
