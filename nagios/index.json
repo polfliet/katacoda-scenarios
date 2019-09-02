@@ -1,0 +1,30 @@
+{
+  "title": "New Relic Nagios Integration",
+  "description": "Learn how to use the New Relic Nagios integration",
+  "difficulty": "beginner",
+  "time": "5 minutes",
+  "details": {
+    "steps": [{
+      "title": "Step 1 - Install New Relic Infrastructure agent",
+      "text": "step1.md"
+    },
+    {
+      "title": "Step 2 - Install New Relic Nagios integration",
+      "text": "step2.md"
+    }],
+    "intro": {
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal",
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\n"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
