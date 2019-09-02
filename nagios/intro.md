@@ -1,3 +1,5 @@
+## Today's lesson
 During this tutorial you will learn to use the New Relic Nagios integration.
 
-You are now logged onto a Virtual Machine running Ubuntu Linux.
+## Let's get started!
+After clicking on the 'START SCENARIO' button below, you will be logged onto a Virtual Machine running Ubuntu Linux.

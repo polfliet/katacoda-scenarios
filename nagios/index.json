@@ -20,8 +20,11 @@
       "text": "finish.md"
     },
     "assets": { 
-      "host01": [ {"file": "*", "target": "/etc/newrelic-infra/integrations.d/"} ]
+      "host01": [ {"file": "nagios-service-checks.yml", "target": "/etc/newrelic-infra/integrations.d/"} ]
     }
+  },
+  "files": {
+    "nagios-service-checks.yml"
   },
   "environment": {
     "uilayout": "editor-terminal",
