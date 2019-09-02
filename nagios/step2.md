@@ -14,19 +14,11 @@ More detailed instructions can be found on [docs.newrelic.com](https://docs.newr
 * Create a copy of the sample service checks file
 `sudo cp nagios-service-checks.yml.sample nagios-service-checks.yml`{{execute}}
 
-* Add a Nagios check
-Open the nagios-service-checks.yml file with the editor
-Add the following: ''
+
+* Check the contents of the nagios-service-checks.yml file
+`sudo cat /etc/newrelic-infra/integrations.d/nagios-service-checks.yml`{{execute}}
+The check_users Nagios script is already available on this machine. 
 
 * Restart the New Relic agent
+After restarting the agent, the check_users Nagios script will be executed and the output will be sent to New Relic
 `sudo systemctl restart newrelic-infra`{{execute}}
-
-
-<pre class="file" data-filename="/etc/newrelic-infra/integrations.d/nagios-service-check-editor.js" data-target="replace">service_checks:
-  - name: check_users
-    command: ["/usr/local/nagios/libexec/check_users", "-w", "5555", "-c", "10"]
-    parse_output: true
-    labels:
-      env: staging
-      key1: val1
-</pre>

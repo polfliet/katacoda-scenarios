@@ -11,6 +11,10 @@
     {
       "title": "Step 2 - Install New Relic Nagios integration",
       "text": "step2.md"
+    },
+    {
+      "title": "Step 3 - Validate Nagios data",
+      "text": "step3.md"
     }],
     "intro": {
       "text": "intro.md",
