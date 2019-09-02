@@ -30,9 +30,6 @@
       ]
     }
   },
-  "files": [
-    "/etc/newrelic-infra/integrations.d/nagios-service-checks.yml"
-  ],
   "environment": {
     "uilayout": "terminal",
     "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\n"
