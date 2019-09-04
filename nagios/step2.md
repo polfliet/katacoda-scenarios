@@ -1,9 +1,7 @@
-## Install New Relic Nagios integration
-
 More detailed instructions can be found on [docs.newrelic.com](https://docs.newrelic.com/docs/integrations/host-integrations/host-integrations-list/nagios-monitoring-integration)
 
 * Install the Nagios integration
-`sudo apt-get install nri-nagios`{{execute}}
+`sudo apt-get install nri-nagios -y`{{execute}}
 
 * Navigate to the New Relic integrations folder:
 `cd /etc/newrelic-infra/integrations.d`{{execute}}
@@ -11,12 +9,9 @@ More detailed instructions can be found on [docs.newrelic.com](https://docs.newr
 * Copy the sample configuration file 
 `sudo cp nagios-config.yml.sample nagios-config.yml`{{execute}}
 
-* Create a copy of the sample service checks file
-`sudo cp nagios-service-checks.yml.sample nagios-service-checks.yml`{{execute}}
-
-
 * Check the contents of the nagios-service-checks.yml file
 `sudo cat /etc/newrelic-infra/integrations.d/nagios-service-checks.yml`{{execute}}
+This example file contains 1 service check.
 The check_users Nagios script is already available on this machine. 
 
 * Restart the New Relic agent

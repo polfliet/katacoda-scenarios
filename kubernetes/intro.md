@@ -1,6 +1,6 @@
-#Welcome!
+# This tutorial
 
-During this tutorial, we will do the following:
-* Install kube-state-metrics
-* Install New Relic Kubernetes integration
-* Install New Relic metadata injection
+During this tutorial, we will learn the following:
+* Install kube-state-metrics for getting metrics about all Kubernetes object
+* Install New Relic Kubernetes integration by deploying a DaemonSet
+* Install New Relic metadata injection to correlate APM data with Kubernetes

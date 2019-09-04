@@ -1,6 +1,3 @@
-
-## Install New Relic Infrastructure agent
-
 More detailed instructions can be found on [docs.newrelic.com](https://docs.newrelic.com/docs/infrastructure/install-configure-manage-infrastructure/linux-installation/install-infrastructure-linux-using-package-manager)
 
 * Get your New Relic license key

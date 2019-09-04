@@ -1,0 +1,153 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: newrelic-metadata-injection-deployment
+  namespace: default
+  labels:
+    app: newrelic-metadata-injection
+spec:
+  replicas: 1
+  template:
+    metadata:
+      namespace: default
+      labels:
+        app: newrelic-metadata-injection
+    spec:
+      serviceAccountName: newrelic-metadata-injection-service-account
+      containers:
+      - name: metadata-injector
+        image: newrelic/k8s-metadata-injection:1.1.0
+        env:
+        - name: clusterName
+          value: "New Relic EKS Guestbook"
+        volumeMounts:
+        - name: tls-key-cert-pair
+          mountPath: /etc/tls-key-cert-pair
+        readinessProbe:
+          httpGet:
+            path: /health
+            port: 8080
+          initialDelaySeconds: 1
+          periodSeconds: 1
+      volumes:
+      - name: tls-key-cert-pair
+        secret:
+          secretName: newrelic-metadata-injection-secret
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: newrelic-metadata-injection-svc
+  namespace: default
+  labels:
+    app: newrelic-metadata-injection
+spec:
+  ports:
+  - port: 443
+    targetPort: 8443
+  selector:
+    app: newrelic-metadata-injection
+---
+apiVersion: admissionregistration.k8s.io/v1beta1
+kind: MutatingWebhookConfiguration
+metadata:
+  name: newrelic-metadata-injection-cfg
+  labels:
+    app: newrelic-metadata-injection
+webhooks:
+- name: metadata-injection.newrelic.com
+  clientConfig:
+    service:
+      name: newrelic-metadata-injection-svc
+      namespace: default
+      path: "/mutate"
+    caBundle: ""
+  rules:
+  - operations: [ "CREATE" ]
+    apiGroups: [""]
+    apiVersions: ["v1"]
+    resources: ["pods"]
+  # Uncomment these lines in case you want to enable the metadata decoration
+  # only for pods living in namespaces labeled with 'newrelic-metadata-injection'.
+  # namespaceSelector:
+  #   matchLabels:
+  #     newrelic-metadata-injection: enabled
+  failurePolicy: Ignore
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: newrelic-metadata-injection-service-account
+  namespace: default
+  labels:
+    app: newrelic-metadata-injection
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: newrelic-metadata-injection-cluster-role
+  namespace: default
+  labels:
+    app: newrelic-metadata-injection
+rules:
+  - apiGroups: ["admissionregistration.k8s.io"]
+    resources: ["mutatingwebhookconfigurations"]
+    verbs: ["get", "create", "patch"]
+  - apiGroups: ["certificates.k8s.io"]
+    resources: ["certificatesigningrequests"]
+    verbs: ["create", "get", "delete"]
+  - apiGroups: ["certificates.k8s.io"]
+    resources: ["certificatesigningrequests/approval"]
+    verbs: ["update"]
+  - apiGroups: [""]
+    resources: ["secrets"]
+    verbs: ["create", "get", "patch"]
+  - apiGroups: [""]
+    resources: ["configmaps"]
+    verbs: ["get"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: newrelic-metadata-injection-cluster-role-binding
+  namespace: default
+  labels:
+    app: newrelic-metadata-injection
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: newrelic-metadata-injection-cluster-role
+subjects:
+  - kind: ServiceAccount
+    name: newrelic-metadata-injection-service-account
+    namespace: default
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: newrelic-metadata-setup
+  namespace: default
+  labels:
+    app: newrelic-metadata-setup
+spec:
+  template:
+    metadata:
+      namespace: default
+    spec:
+      serviceAccountName: newrelic-metadata-injection-service-account
+      containers:
+      - name: metadata-cert-setup
+        # This is a minimal kubectl image based on Alpine Linux that sings certificates using the k8s extension api server
+        image: newrelic/k8s-webhook-cert-manager:1.0.1
+        command: ["./generate_certificate.sh"]
+        args:
+          - "--service"
+          - "newrelic-metadata-injection-svc"
+          - "--webhook"
+          - "newrelic-metadata-injection-cfg"
+          - "--secret"
+          - "newrelic-metadata-injection-secret"
+          - "--namespace"
+          - "default"
+      restartPolicy: Never
+  backoffLimit: 1
