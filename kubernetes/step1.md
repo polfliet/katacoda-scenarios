@@ -1,7 +1,4 @@
 
-
-## Inject your New Relic license key
-
 We will create a Kubernetes secret that contains our New Relic License key. (Kubernetes secrets are used to store sensitive information such as passwords and license keys in a Kubernetes cluster – we can set this once and then re-use it in all our New Relic configurations.)
 
 ### Get your New Relic license key

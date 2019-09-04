@@ -1,3 +1,4 @@
+
 ### Install the New Relic metadata injection
 `kubectl create -f k8s-metadata-injection-latest.yaml`{{execute}}
 
