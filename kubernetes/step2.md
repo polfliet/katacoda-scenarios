@@ -9,4 +9,4 @@ Confirm that kube-state-metrics is installed
 `kubectl get pods --all-namespaces | grep kube-state-metrics`{{execute}}
 
 You should see something like:
-![alt text](https://github.com/polfliet/katacoda-scenarios/blob/master/kubernetes/assets/ksm.png?raw=true "Kube-state-metrics")
+![alt text](https://github.com/polfliet/katacoda-scenarios/blob/master/kubernetes/screenshots/ksm.png?raw=true "Kube-state-metrics")
