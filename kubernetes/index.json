@@ -4,16 +4,24 @@
   "details": {
     "steps": [
       {
-        "title": "Step 1",
+        "title": "Step 1 - License key",
         "text": "step1.md"
       },
       {
-        "title": "Step 2",
+        "title": "Step 2 - kube-state-metrics",
         "text": "step2.md"
       },
       {
-        "title": "Step 3",
+        "title": "Step 3 - Kubernetes integration",
         "text": "step3.md"
+      },
+      {
+        "title": "Step 4 - Metadata injection",
+        "text": "step4.md"
+      },
+      {
+        "title": "Step 5 - Kubernetes cluster explorer",
+        "text": "step5.md"
       }
     ],
     "intro": {
@@ -27,7 +35,7 @@
     }
   },
   "environment": {
-    "uilayout": "editor-terminal"
+    "uilayout": "terminal"
   },
   "backend": {
     "imageid": "kubernetes"

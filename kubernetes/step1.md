@@ -14,4 +14,6 @@ Create the Kubernetes secret by copying the following line and **put your licens
 
 `kubectl create secret generic newrelic-secret --from-literal=new_relic_license_key='<YOUR_NEW_RELIC_LICENSE_KEY>'`{{copy}}
 
+You should see something like:
+![alt text](https://github.com/polfliet/katacoda-scenarios/blob/master/kubernetes/assets/secret.png?raw=true "Secret")
 
