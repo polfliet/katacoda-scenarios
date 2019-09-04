@@ -1,4 +1,6 @@
 
+The New Relic metadata injection allows us to correlate APM data with Kubernetes data.
+
 ### Install the New Relic metadata injection
 `kubectl create -f k8s-metadata-injection-latest.yaml`{{execute}}
 
