@@ -1,6 +1,6 @@
-# Interactive Katacoda Scenarios
+# New Relic Interactive Katacoda Scenarios
 
-[![](http://shields.katacoda.com/katacoda/newrelic/count.svg)](https://www.katacoda.com/newrelic "Get your profile on Katacoda.com")
+[![](http://shields.katacoda.com/katacoda/newrelic/count.svg)](https://www.katacoda.com/newrelic "Check out the New Relic tutorials on Katacoda.com")
 
 Visit https://www.katacoda.com/newrelic to view the profile and interactive scenarios
 

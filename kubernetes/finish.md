@@ -1,2 +1,2 @@
 
-More info about the Kubernetes integration, metadata injection, etc. can be found at [docs.newrelic.com](https://docs.newrelic.com/docs/integrations/kubernetes-integration/get-started/introduction-kubernetes-integration)
+**More info about the Kubernetes integration, metadata injection, etc. can be found at [docs.newrelic.com](https://docs.newrelic.com/docs/integrations/kubernetes-integration/get-started/introduction-kubernetes-integration)**
