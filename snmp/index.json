@@ -1,0 +1,40 @@
+{
+  "title": "New Relic SNMP Integration",
+  "description": "Learn how to use the New Relic SNMP integration",
+  "difficulty": "beginner",
+  "time": "15 minutes",
+  "details": {
+    "steps": [{
+      "title": "Step 1 - Install New Relic Infrastructure agent",
+      "text": "step1.md"
+    },
+    {
+      "title": "Step 2 - Install New Relic Nagios integration",
+      "text": "step2.md"
+    },
+    {
+      "title": "Step 3 - Validate Nagios data",
+      "text": "step3.md"
+    }],
+    "intro": {
+      "text": "intro.md",
+      "credits": "spolfliet@newrelic.com"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": { 
+      "host01": [
+        {"file": "nagios-service-checks.yml", "target": "/etc/newrelic-infra/integrations.d/"},
+        {"file": "check_users", "target": "/usr/local/nagios/libexec/"}
+      ]
+    }
+  },
+  "environment": {
+    "uilayout": "terminal",
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\n"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
