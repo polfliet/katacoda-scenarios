@@ -1,0 +1,29 @@
+# Configuration file template, provided in case you want to provide extra
+# configuration over the nr-nri-snmp-config.yml
+# file.
+#
+# For a complete description of the Configuration File Specification, please
+# refer to the Integrations SDK documentation:
+# https://docs.newrelic.com/docs/integrations/integrations-sdk/file-specifications
+
+integration_name: com.newrelic.snmp
+
+instances:
+  - name: Host1
+    command: metrics
+    arguments:
+      snmp_host: 127.0.0.1
+      snmp_port: 1024
+      community: public
+      collection_files: "/etc/newrelic-infra/integrations.d/snmp-metrics-host.yml"
+    labels:
+      env: prod
+  - name: Linksys
+    command: inventory
+    arguments:
+      snmp_host: 127.0.0.1
+      snmp_port: 1024
+      community: linksys
+      collection_files: "/etc/newrelic-infra/integrations.d/snmp-metrics-router.yml"
+    labels:
+      env: prod

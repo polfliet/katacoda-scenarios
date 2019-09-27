@@ -6,6 +6,7 @@ Click on your name in the top-right corner and go to account settings.
 Here you can find your license key.
 
 ### Create a configuration file, and add your license key:
+Click on the button to copy, and then paste the following command in the terminal:
 `echo "license_key: YOUR_LICENSE_KEY" | sudo tee -a /etc/newrelic-infra.yml`{{copy}}
 *Don't forget to update YOUR_LICENSE_KEY*
 

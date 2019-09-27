@@ -34,7 +34,10 @@
       "host01": [
         {"file": "eaton.snmprec", "target": "/root/"},
         {"file": "linksys.snmprec", "target": "/root/"},
-        {"file": "public.snmprec", "target": "/root/"}
+        {"file": "public.snmprec", "target": "/root/"},
+        {"file": "snmp-config.yml", "target": "/root/"},
+        {"file": "snmp-metrics-host.yml", "target": "/root/"},
+        {"file": "snmp-metrics-router.yml", "target": "/root/"}
       ]
     }
   },

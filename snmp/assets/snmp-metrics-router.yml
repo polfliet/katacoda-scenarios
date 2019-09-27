@@ -1,0 +1,15 @@
+collect:
+- device: router1
+  metric_sets:
+  - name: scalar metrics
+    type: scalar # Or table to describe metrics from an SNMP table
+    event_type: SNMPSample
+    metrics:
+    - metric_name: Timeticks
+      oid: .1.3.6.1.2.1.1.3.0
+    - metric_name: Bytes received
+      oid: .1.3.6.1.2.1.1.9.0
+  inventory:
+  - oid: .3.6.1.2.1.1.1.0
+    category: model
+    name: modelName
