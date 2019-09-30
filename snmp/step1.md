@@ -8,3 +8,4 @@ Let's then check if we can get SNMP data using *snmpwalk*
 
 TODO SCREENSHOT OF OUTPUT
 
+*More devices can be simulated, [check this repository](https://github.com/librenms/librenms/tree/master/tests/snmpsim)*
