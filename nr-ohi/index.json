@@ -1,0 +1,35 @@
+{
+  "title": "New Relic Infrastructure On Host Integration",
+  "description": "Learn how to install and configure a New Relic Infra On Host Integration (OHI)",
+  "difficulty": "beginner",
+  "time": "10 minutes",
+  "details": {
+    "steps": [{
+      "title": "Step 1 - Install New Relic Infrastructure agent",
+      "text": "step1.md"
+    },
+    {
+      "title": "Step 2 - Install the New Relic On-Host Integration",
+      "text": "step2.md"
+    },
+    {
+      "title": "Step 3 - Validate Nagios data",
+      "text": "step3.md"
+    }],
+    "intro": {
+      "text": "intro.md",
+      "credits": "aisaacson@newrelic.com",
+      "courseData": "install-sql.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal",
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\n"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
