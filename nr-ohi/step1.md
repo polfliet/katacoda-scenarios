@@ -1,6 +1,6 @@
 More detailed instructions can be found on [docs.newrelic.com](https://docs.newrelic.com/docs/infrastructure/install-configure-manage-infrastructure/linux-installation/install-infrastructure-linux-using-package-manager)
 
-* Get your New Relic license key
+* Get your New Relic license key.
 First, login to rpm.newrelic.com.
 Click on your name in the top-right corner and go to account settings.
 Here you can find your license key.
@@ -21,5 +21,4 @@ Here you can find your license key.
 * Install New Relic Infrastructure agent
 `sudo apt-get install newrelic-infra -y`{{execute}}
 
-* Confirm that the Infra agent is reporting to New Relic
-Go to http://rpm.newrelic.com, click on Infrastructure and see that the new host appears.
+* Confirm that the Infra agent is reporting to New Relic by going to http://rpm.newrelic.com, and clicking on Infrastructure and see that the new host appears.
