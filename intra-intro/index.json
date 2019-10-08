@@ -17,8 +17,7 @@
     ],
     "intro": {
       "text": "intro.md",
-      "credits": "svandamme@newrelic.com",
-      "courseData": "init.sh"
+      "credits": "svandamme@newrelic.com"
     },
     "finish": {
       "text": "finish.md"
