@@ -13,19 +13,11 @@
       {
         "title": "Step 2 - Install New Relic Infrastructure agent",
         "text": "step2.md"
-      },
-      {
-        "title": "Step 3 - Install New Relic SNMP integration",
-        "text": "step3.md"
-      },
-      {
-        "title": "Step 4 - Validate SNMP data",
-        "text": "step4.md"
       }
     ],
     "intro": {
       "text": "intro.md",
-      "credits": "spolfliet@newrelic.com",
+      "credits": "svandamme@newrelic.com",
       "courseData": "init.sh"
     },
     "finish": {
