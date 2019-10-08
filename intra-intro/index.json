@@ -1,0 +1,42 @@
+{
+  "title": "New Relic Intrastructure introduction",
+  "description": "Learn how to install and configure New Relic Infrastructure",
+  "difficulty": "beginner",
+  "time": "30 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1 - Installation of the agent",
+        "text": "step1.md",
+        "verify": "step1-verify.sh"
+      },
+      {
+        "title": "Step 2 - Install New Relic Infrastructure agent",
+        "text": "step2.md"
+      },
+      {
+        "title": "Step 3 - Install New Relic SNMP integration",
+        "text": "step3.md"
+      },
+      {
+        "title": "Step 4 - Validate SNMP data",
+        "text": "step4.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "credits": "spolfliet@newrelic.com",
+      "courseData": "init.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal",
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\n"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
