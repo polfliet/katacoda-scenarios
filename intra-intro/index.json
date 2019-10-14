@@ -13,6 +13,10 @@
       {
         "title": "Step 2 - Install New Relic Infrastructure agent",
         "text": "step2.md"
+      },
+      {
+        "title": "Step 3 - Exploring the data",
+        "text": "step3.md"
       }
     ],
     "intro": {
