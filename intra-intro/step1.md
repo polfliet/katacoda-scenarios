@@ -11,6 +11,6 @@ Next is the installation. In New Relic go to `Infrastructure` and click on `+ Ad
 
 After selecting the right operating system follow the instructions within New Relic, executing command by command. When you need to select a command depending on the `distribution version` you can use the information from the `VERSION_ID` discovered above.
 
-You can check if your installation was succesfull by running: `service newrelic-infra status`{{execute}}. If it says `Active: active` you are all good.
+You can check if your installation was succesfull by running: `service newrelic-infra status`{{execute}}. If it says `Active: active (running)` you are all good.
 
 Once you're done installing and have checked, please click on `continue` to start configuring the agent.
