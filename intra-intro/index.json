@@ -18,6 +18,11 @@
       {
         "title": "Step 3 - Exploring the data",
         "text": "step3.md"
+      },
+      {
+        "title": "Step 4 - Debugging the agent",
+        "text": "step4.md",
+        "courseData": "step4-pre.sh"
       }
     ],
     "intro": {
