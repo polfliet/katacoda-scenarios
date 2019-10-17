@@ -22,7 +22,7 @@ Next to `SystemSample` New Relic also has:
 * `NetworkSample` event captures the descriptive and state information for each network device associated with a server. It includes the device's interface and address information, as well as current usage data.
 * `InfrastructureEvent` describes changes (deltas) that occur in a system's live state.
 
-Each of these will contain the custom_attributes we've defined in our config file, allowing you to quick sort like we did with `SystemSample` data.
+Each of these (except for the `InfrastructureEvent`) will contain the custom_attributes we've defined in our config file, allowing you to quick sort and group like we did with `SystemSample` data.
 
 Next to the data in Insighs you also have the views in New Relic Infrastructure. Navigate to New Relic UI and select the Infrastructure tab. Make sure to check out the following pages:
 
