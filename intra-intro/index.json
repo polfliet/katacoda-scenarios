@@ -12,7 +12,8 @@
       },
       {
         "title": "Step 2 - Install New Relic Infrastructure agent",
-        "text": "step2.md"
+        "text": "step2.md",
+        "verify": "step2-verify.sh"
       },
       {
         "title": "Step 3 - Exploring the data",
