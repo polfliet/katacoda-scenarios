@@ -1,7 +1,6 @@
 service_checks:
   - name: check_users
-    command: ["/usr/local/nagios/libexec/check_users", "-w", "5", "-c", "10"]
+    command: ["/usr/local/nagios/libexec/check_users", "2", "5"]
     parse_output: true
     labels:
-      env: staging
-      key1: val1
+      env: prod

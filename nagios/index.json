@@ -18,7 +18,8 @@
     }],
     "intro": {
       "text": "intro.md",
-      "credits": "spolfliet@newrelic.com"
+      "credits": "spolfliet@newrelic.com",
+      "courseData": "init.sh"
     },
     "finish": {
       "text": "finish.md"
