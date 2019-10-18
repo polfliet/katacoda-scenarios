@@ -1,6 +1,6 @@
 {
   "title": "New Relic Nagios Integration",
-  "description": "Learn how to use the New Relic Nagios integration",
+  "description": "Re-use your existing Nagios scripts with the New Relic Nagios integration",
   "difficulty": "intermediate",
   "time": "15 minutes",
   "details": {
