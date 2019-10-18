@@ -1,8 +1,8 @@
 {
   "title": "New Relic Nagios Integration",
   "description": "Learn how to use the New Relic Nagios integration",
-  "difficulty": "beginner",
-  "time": "5 minutes",
+  "difficulty": "intermediate",
+  "time": "15 minutes",
   "details": {
     "steps": [{
       "title": "Step 1 - Install New Relic Infrastructure agent",
@@ -25,7 +25,7 @@
     },
     "assets": { 
       "host01": [
-        {"file": "nagios-service-checks.yml", "target": "/etc/newrelic-infra/integrations.d/"},
+        {"file": "service_checks.yml", "target": "/etc/newrelic-infra/integrations.d/"},
         {"file": "check_users", "target": "/usr/local/nagios/libexec/"}
       ]
     }

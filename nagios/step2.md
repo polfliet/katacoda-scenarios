@@ -10,7 +10,7 @@ More detailed instructions can be found on [docs.newrelic.com](https://docs.newr
 `sudo cp nagios-config.yml.sample nagios-config.yml`{{execute}}
 
 * Check the contents of the nagios-service-checks.yml file
-`sudo cat /etc/newrelic-infra/integrations.d/nagios-service-checks.yml`{{execute}}
+`sudo cat /etc/newrelic-infra/integrations.d/service_checks.yml`{{execute}}
 This example file contains 1 service check.
 
 The check_users Nagios script is already available on this machine. 
