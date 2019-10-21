@@ -1,0 +1,6 @@
+service_checks:
+  - name: check_users
+    command: ["/usr/local/nagios/libexec/check_users", "2", "5"]
+    parse_output: true
+    labels:
+      env: prod

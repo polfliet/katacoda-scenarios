@@ -1,11 +1,11 @@
 More detailed instructions can be found on [docs.newrelic.com](https://docs.newrelic.com/docs/infrastructure/install-configure-manage-infrastructure/linux-installation/install-infrastructure-linux-using-package-manager)
 
 * Get your New Relic license key
-First, login to rpm.newrelic.com.
+First, login to [rpm.newrelic.com](https://rpm.newrelic.com).
 Click on your name in the top-right corner and go to account settings.
 Here you can find your license key.
 
-* Create a configuration file, and add your license key:
+* Create a configuration file, and add your license key (click the copy icon and paste in the terminal):
 `echo "license_key: YOUR_LICENSE_KEY" | sudo tee -a /etc/newrelic-infra.yml`{{copy}}
 *Don't forget to update YOUR_LICENSE_KEY*
 

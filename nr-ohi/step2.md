@@ -12,7 +12,7 @@ More detailed instructions can be found on [docs.newrelic.com](https://docs.newr
 `sudo cp mysql-config.yml.sample mysql-config.yml`{{execute}}
 
 * Open the configuration file in an editor.
-`/etc/newrelic-infra/integrations.d/mysql-config.yml`{{open}}
+`mysql-config.yml`{{open}}
 
 * Restart the New Relic agent
 After restarting the agent, the check_users Nagios script will be executed and the output will be sent to New Relic
