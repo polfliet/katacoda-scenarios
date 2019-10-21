@@ -11,9 +11,6 @@ More detailed instructions can be found on [docs.newrelic.com](https://docs.newr
 * Copy the sample configuration file
 `sudo cp mysql-config.yml.sample mysql-config.yml`{{execute}}
 
-* Edit the configuration file.  
-`sudo cp mysql-config.yml.sample mysql-config.yml`{{execute}}
-
 * Open the configuration file in an editor.
 `/etc/newrelic-infra/integrations.d/mysql-config.yml`{{open}}
 
