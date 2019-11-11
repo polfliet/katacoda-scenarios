@@ -13,3 +13,6 @@ TODO SCREENSHOT
 
 `FROM SNMPSample select device, `IP Address`, `Operating System` where device = 'host1' limit 10`
 ![alt text](https://github.com/polfliet/katacoda-scenarios/blob/master/nagios/screenshots/query2.png?raw=true "Query")
+
+Thanks for following this tutorial.
+Learn more about New Relic's SNMP integration on [docs.newrelic.com](https://docs.newrelic.com/docs/integrations/host-integrations/host-integrations-list/snmp-monitoring-integration)
