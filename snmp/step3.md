@@ -21,8 +21,6 @@ Have a look at one of them and copy them over
 
 `sudo mv snmp-metrics-router.yml /etc/newrelic-infra/integrations.d`{{execute}}
 
-`sudo mv snmp-metrics-ups.yml /etc/newrelic-infra/integrations.d`{{execute}} (TODO, not yet working)
-
 ### Restart the New Relic agent
 After restarting the agent, the SNMP agent will be polled and the output will be sent to New Relic
 `sudo systemctl restart newrelic-infra`{{execute}}
