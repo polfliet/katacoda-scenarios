@@ -2,7 +2,7 @@
 
 Go to one.newrelic.com
 
-Open the ChartBuilder in advanced mode and do a query to SNMPSample: 
+Open the ChartBuilder (top-right of your screen) and choose the Advanced (NRQL) mode to query SNMPSample: 
 `FROM SNMPSample SELECT * limit 10`
 ![alt text](https://github.com/polfliet/katacoda-scenarios/blob/master/snmp/screenshots/query0.png?raw=true "Query")
 
