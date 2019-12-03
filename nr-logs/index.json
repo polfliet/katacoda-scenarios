@@ -1,25 +1,21 @@
 {
-  "title": "nr-logs",
-  "description": "FluentD client install with basic logs going into New Relic Logs.",
+  "title": "New Relic Logs",
+  "description": "Learn how to install a FluentD client with New Relic Logs",
   "difficulty": "Beginner",
   "time": "5 minutes",
   "details": {
     "steps": [
       {
-        "title": "Step 1",
+        "title": "Step 1 - Install FluentD on Ubuntu 18.04",
         "text": "step1.md"
       },
       {
-        "title": "Step 2",
+        "title": "Step 2 - Install New Relic Plugin",
         "text": "step2.md"
       },
       {
-        "title": "Step 3",
+        "title": "Step 3 - Configure the Fluentd plugin",
         "text": "step3.md"
-      },
-      {
-        "title": "Step 4",
-        "text": "step4.md"
       }
     ],
     "intro": {
@@ -30,9 +26,9 @@
     }
   },
   "environment": {
-    "uilayout": "editor-terminal"
+    "uilayout": "terminal"
   },
   "backend": {
-    "imageid": "ubuntu1904"
+    "imageid": "ubuntu1804"
   }
 }
