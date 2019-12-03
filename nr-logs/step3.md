@@ -1,7 +1,12 @@
 Configure the Fluentd plugin to add your New Relic License Key, by adding the following:
 
 Modify td-agent.conf
-`nano /etc/td-agent/td-agent.conf`{{execute}}
+`vi /etc/td-agent/td-agent.conf`{{execute}}
+
+For this demo, we are going to change all the permissions as an example, never do this in production, this is just an example.
+`sudo chmod -R 777 /var/log`{{execute}}
+
+Press "i" for insert and then paste the following, changing your <new_relic_license_key> to your New Relic license key (see below).
 
 ```
 <source>
@@ -17,6 +22,7 @@ Modify td-agent.conf
   @type record_transformer
   <record>
     service_name ${tag}
+    hostname "#{Socket.gethostname}"
   </record>
 </filter>
 
@@ -26,4 +32,4 @@ Modify td-agent.conf
 </match>
 ```
 
-Please add your license key in <new_relic_license_key>, which can be found in "account settings"
+Your New Relic License key can be found in "account settings"
