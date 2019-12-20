@@ -14,8 +14,12 @@
         "text": "step2.md"
       },
       {
-        "title": "Step 3 - Configure the Fluentd plugin",
+        "title": "Step 3 - Update Your New Relic license key",
         "text": "step3.md"
+      },
+      {
+        "title": "Step 4 - See your Log Events in New Relic Logs",
+        "text": "step4.md"
       }
     ],
     "intro": {
