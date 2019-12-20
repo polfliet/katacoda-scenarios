@@ -27,7 +27,7 @@ echo "<source>
 <match **>
   @type newrelic
   license_key <new_relic_license_key>
-</match>' >> /etc/td-agent/td-agent.conf"
+</match>" >> /etc/td-agent/td-agent.conf
 ```
 
 ## Permissions
