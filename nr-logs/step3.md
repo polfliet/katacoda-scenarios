@@ -5,8 +5,9 @@ Retrieve your New Relic license key by logging in to your New Relic account, and
 
 ## Modify Your License Key
 Add your license key below by replacing <new_relic_license_key> with your New Relic license key (example 12345678910)
-
-`echo ""<source>
+Copy and paste the following into the command line, replacing <new_relic_license_key>:
+```
+echo "<source>
   @type tail
   <parse>
     @type none
@@ -26,8 +27,8 @@ Add your license key below by replacing <new_relic_license_key> with your New Re
 <match **>
   @type newrelic
   license_key <new_relic_license_key>
-</match>' >> /etc/td-agent/td-agent.conf""`{{copy}}
-
+</match>' >> /etc/td-agent/td-agent.conf"
+```
 
 ## Permissions
 Once you have added your license key and sample configuration we will need to modify the permissions on our log files. For this demo, we are going to change all the permissions as an example, never do this in production, this is just an example.
