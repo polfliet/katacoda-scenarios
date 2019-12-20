@@ -6,7 +6,7 @@ Retrieve your New Relic license key by logging in to your New Relic account, and
 ## Modify Your License Key
 Add your license key below by replacing <new_relic_license_key> with your New Relic license key (example 12345678910)
 
-`echo "<source>
+`echo ""<source>
   @type tail
   <parse>
     @type none
@@ -26,7 +26,7 @@ Add your license key below by replacing <new_relic_license_key> with your New Re
 <match **>
   @type newrelic
   license_key <new_relic_license_key>
-</match>' >> /etc/td-agent/td-agent.conf"`{{copy}}
+</match>' >> /etc/td-agent/td-agent.conf""`{{copy}}
 
 
 ## Permissions
