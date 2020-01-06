@@ -4,6 +4,8 @@ Exercise the td-agent service, to generate some traffic:
 `sudo systemctl stop td-agent.service`{{execute}}
 `sudo systemctl start td-agent.service`{{execute}}
 
+You can also generate your own custom logs which will automatically get picked up:
+`echo "test message" >> /var/log/sample_kata.log`{{execute}} (click on this as many times as you like)
 
 Navigate to New Relic Logs and see your Log Events:
 
