@@ -7,7 +7,7 @@ Retrieve your New Relic license key by logging in to your New Relic account, and
 
 ## Modify Your License Key
 Add your license key below by replacing <new_relic_license_key> with your New Relic license key
-`sudo sed 's/<new_relic_license_key>' /etc/td-agent/td-agent.conf`{{copy}}
+`sudo sed -i 's/<new_relic_license_key>/replacemewithyourkey/g' /etc/td-agent/td-agent.conf`{{copy}}
 
 ## Permissions
 Once you have added your license key and sample configuration we will need to modify the permissions on our log files. For this demo, we are going to change all the permissions as an example, never do this in production, this is just an example.
