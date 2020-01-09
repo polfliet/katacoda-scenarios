@@ -1,6 +1,8 @@
 {
   "title": "Monitoring Kubernetes with New Relic",
   "description": "Learn how to use the New Relic Kubernetes integration to monitor a Kubernetes environment",
+  "difficulty": "beginner",
+  "time": "20 minutes",
   "details": {
     "steps": [
       {

@@ -3,13 +3,13 @@ During this step we will install kube-state-metrics, a service that exposes metr
 
 ### Install kube-state-metrics
 Download kube-state-metrics
-`curl -o kube-state-metrics-1.5.zip https://codeload.github.com/kubernetes/kube-state-metrics/zip/release-1.5 && unzip kube-state-metrics-1.5.zip`{{execute}}
+`curl -L -o kube-state-metrics-1.7.2.zip https://github.com/kubernetes/kube-state-metrics/archive/v1.7.2.zip && unzip kube-state-metrics-1.7.2.zip`{{execute}}
 
 Install kube-state-metrics in the cluster
-`kubectl apply -f kube-state-metrics-release-1.5/kubernetes`{{execute}}
+`kubectl apply -f kube-state-metrics-1.7.2/kubernetes`{{execute}}
 
 Confirm that kube-state-metrics is installed
 `kubectl get pods --all-namespaces | grep kube-state-metrics`{{execute}}
 
-You should see something like:
+After a minute, you should see something like:
 ![alt text](https://github.com/polfliet/katacoda-scenarios/blob/master/kubernetes/screenshots/ksm.png?raw=true "Kube-state-metrics")

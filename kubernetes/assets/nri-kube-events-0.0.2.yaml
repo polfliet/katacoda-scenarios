@@ -94,7 +94,7 @@ spec:
           env:
             - name: "NRIA_LICENSE_KEY"
               valueFrom:
-              secretKeyRef:
+                secretKeyRef:
                   name: newrelic-secret
                   key: new_relic_license_key
           #- name: "NRIA_VERBOSE"
