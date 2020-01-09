@@ -15,4 +15,6 @@ Create the Kubernetes secret by copying the following line and **put your licens
 You should see something like:
 ![alt text](https://github.com/polfliet/katacoda-scenarios/blob/master/kubernetes/screenshots/secret.png?raw=true "Secret")
 
+If you made a mistake, you should delete the secret with *kubectl delete secret newrelic-secret*
+
 The yaml files in the rest of this tutorial will refer to this *newrelic-secret*
