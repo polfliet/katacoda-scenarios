@@ -16,12 +16,20 @@
         "text": "step3.md"
       },
       {
-        "title": "Step 4 - Metadata injection",
+        "title": "Step 4 - Kubernetes events",
         "text": "step4.md"
       },
       {
-        "title": "Step 5 - Kubernetes cluster explorer",
+        "title": "Step 5 - Metadata injection",
         "text": "step5.md"
+      },
+      {
+        "title": "Step 6 - Logs",
+        "text": "step6.md"
+      },
+      {
+        "title": "Step 7 - Kubernetes cluster explorer",
+        "text": "step7.md"
       }
     ],
     "intro": {

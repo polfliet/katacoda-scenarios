@@ -1,11 +1,14 @@
 
-The New Relic metadata injection allows us to correlate APM data with Kubernetes data.
+During this step we will deploy the New Relic Kubernetes events integration to our cluster.
 
-### Install the New Relic metadata injection
-`kubectl create -f k8s-metadata-injection-latest.yaml`{{execute}}
+### Install the New Relic Kubernetes events integration
+The New Relic Kubernetes events integration watches for events happening in our Kubernetes cluster.
 
-Confirm that the setup job is completed and the metadata injection is running:
+The yaml file is already available on our machine, we can apply it:
+`kubectl apply -f nri-kube-events-0.0.2.yaml`{{execute}}
+
+Confirm the Pod is running
 `kubectl get pods`{{execute}}
 
 You should see something like:
-![alt text](https://github.com/polfliet/katacoda-scenarios/blob/master/kubernetes/screenshots/metadata.png?raw=true "Metadata")
+![alt text](https://github.com/polfliet/katacoda-scenarios/blob/master/kubernetes/screenshots/eventpod.png?raw=true "Event pod")
