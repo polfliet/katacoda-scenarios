@@ -26,12 +26,16 @@
         "text": "step5.md"
       },
       {
-        "title": "Step 6 - Logs",
+        "title": "Step 6 - Prometheus metrics",
         "text": "step6.md"
       },
       {
-        "title": "Step 7 - Kubernetes cluster explorer",
+        "title": "Step 7 - Logs",
         "text": "step7.md"
+      },
+      {
+        "title": "Step 8 - Kubernetes cluster explorer",
+        "text": "step8.md"
       }
     ],
     "intro": {
