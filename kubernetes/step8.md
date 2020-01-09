@@ -28,7 +28,7 @@ Inspect what's happening in the cluster by clicking on the *Events* tab, or by l
 We can also check out the Prometheus metrics we are capturing, by using New Relic's Chart Builder:
 ![Prometheus metrics](https://github.com/polfliet/katacoda-scenarios/blob/master/kubernetes/screenshots/demo-prometheus.gif?raw=true "Prometheus metrics")
 
-And of course you can then create any dashboard or chart with those Prometheus metrics.
+And of course you can then create any chart or dashboard with those Prometheus metrics.
 
 ### More info
 Documentation can be found here:

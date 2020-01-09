@@ -1,6 +1,6 @@
 {
   "title": "Monitoring Kubernetes with New Relic",
-  "description": "Learn how to use the New Relic Kubernetes integration to monitor a Kubernetes environment",
+  "description": "Learn how to get full observability in a Kubernetes environment by following New Relic's observability maturity model",
   "difficulty": "beginner",
   "time": "20 minutes",
   "details": {
